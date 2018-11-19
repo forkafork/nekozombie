@@ -1,0 +1,171 @@
+body{
+    width:340px;
+    height:620px;
+    margin: auto;
+}
+
+#movement{
+    position: relative; /* 1 */
+    width: 100%;
+    height: 560px;
+}
+
+/* All direct div children of #movement are position absolute */
+#movement > div {
+    position: absolute;
+    cursor: pointer; /* Mouse will turn into a hand on hover */
+}
+
+#movement > div.hide {
+    display: none;
+}
+/* positions */
+
+#goUp { /*the image will be placed at the center of the website starting from its left side, we use transform to move the image to the left by 50% so the center of image is at the center of website*/
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%); /*for normal browsers*/
+    -moz-transform: translateX(-50%); /*for firefox*/
+    -webkit-transform: translateX(-50%); /*for apple browser*/
+}
+
+#goDown {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);   
+}
+
+#goLeft {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+#goRight {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+#catPic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+#catPic.hideC {
+    display: none;
+}
+
+#zombiePic{
+    height: 400px;
+    width: 200px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+#zombiePic.hideZ {
+    display: none;
+}
+
+/* positions end */
+
+#goUp img{
+    height: 65px;
+    width: 65px;
+}
+#goDown img{
+    height: 65px;
+    width: 65px;
+}
+#goLeft img{
+    height: 65px;
+    width: 65px;
+}
+#goRight img{
+    height: 65px;
+    width: 65px;
+}
+#backdrop{
+    width:340px;
+    height:620px;
+    background-color: black;
+    border: solid;
+    border-width: 3px;
+}
+#container{
+    width:340px;
+    height:620px;
+    background-image: url(pics/33.jpeg);
+    border: solid;
+    border-radius: 30px;
+    border-width: 1px;
+    position: relative;
+
+}
+
+#scoreBg{
+    width:340px;
+    height:50px;
+    line-height: 50px;
+    background:rgb(0, 0, 0);
+    color:#e5ff00;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#scoreBg h1 {
+    margin: 0;
+}
+
+#indexBG {
+    width:340px;
+    height:620px;
+    background-image: url(pics/frontbg1.png);
+    border: solid;
+    border-width: 1px;
+}
+
+#zombieBG {
+    width:340px;
+    height:620px;
+    background-image: url(pics/zombiebg.jpg);
+    border: solid;
+    border-width: 1px;
+}
+
+#playButton{
+    margin-top: 50px;
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+	background-color: #63ff4e;
+	color: #000000;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    transform: translate(65%, 25%);
+}
+#playButton:hover{
+    background-color: #ff814f; 
+}
+
+h4 {
+    text-align: center; 
+    margin-top: 106%;
+    color: #ffffff;
+}
